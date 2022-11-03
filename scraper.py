@@ -34,7 +34,7 @@ def get_citations_needed_report(url):
     for i in paragraphs:
 
         if i.find(title='Wikipedia:Citation needed'):
-            with open('paragraph_needed_citation.tx.txt','a') as f:
+            with open('paragraph_needed_citation.txt','a') as f:
                 f.write(i.text +'\n')
 
 
